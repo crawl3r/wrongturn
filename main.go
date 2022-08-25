@@ -9,13 +9,11 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"regexp"
 	"strings"
 	"sync"
 	"time"
 )
 
-var aspRegex = regexp.MustCompile(`(?m)(\@page|\@model)`)
 var out io.Writer = os.Stdout
 
 func main() {
